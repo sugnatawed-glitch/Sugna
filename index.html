@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Redeem Code App</title>
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: linear-gradient(180deg, #182238 0%, #0d1322 100%);
+            border-radius: 16px;
+            max-width: 360px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            border: 1px solid #2a3859;
+        }
+        .qr-box {
+            background: #ffffff;
+            padding: 12px;
+            border-radius: 12px;
+            display: inline-block;
+            margin: 15px 0;
+        }
+        .qr-box img {
+            width: 220px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+        .pay-title {
+            color: #00baf2;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 12px 0;
+            border-radius: 6px;
+            border: 1px solid #2a3859;
+            background: #0d1322;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+        .btn {
+            background-color: #008cff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 85%;
+            font-size: 15px;
+        }
+        .timer {
+            color: #ff4d4d;
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Free Redeem Code App</h2>
+        <p style="color:#8a99ad; font-size: 14px; margin-top:-10px;">Unlock the redeem code generator</p>
+
+        <div class="qr-box">
+            <div class="pay-title">Paytm / PhonePe ₹50</div>
+            <img src="AccountQRCodeState Bank of India - 3031_DAR.png" alt="PhonePe QR">
+            <p style="color: #333; font-size: 12px; margin: 5px 0 0 0; font-weight: bold;">UDAY LAL BHIL</p>
+        </div>
+
+        <h3>🔒 Unlock Redeem Code Generator</h3>
+        <p style="font-size: 13px; color: #bbb;">Scan & Pay ₹50 to continue.</p>
+
+        <p style="font-size: 12px; color: #aaa; margin-bottom: 5px;">Payment के बाद 12-digit UTR No. यहाँ डालें:</p>
+        <input type="text" id="utrInput" placeholder="Enter 12-digit UTR No." maxlength="12">
+        <br>
+        <button class="btn" onclick="verifyPayment()">Submit & Unlock</button>
+
+        <div class="timer">Complete payment within 10:00</div>
+    </div>
+
+    <script>
+        function verifyPayment() {
+            var utr = document.getElementById("utrInput").value;
+            if(utr.length === 12) {
+                alert("Payment Verified! Opening Generator...");
+                // यहाँ आगे वाले पेज या Redeem Code का लिंक डालें
+                window.location.href = "https://example.com"; 
+            } else {
+                alert("कृपया सही 12-अंकों का UTR नंबर डालें!");
+            }
+        }
+    </script>
+
+</body>
+</html>
